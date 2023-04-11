@@ -1,0 +1,29 @@
+body {
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+
+.box {
+    max-width: 400px;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 30px;
+    
+
+    &_forForm {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(240, 223, 223, 0.422);
+
+        padding: 30px 30px;
+        border-radius: 10px;
+        opacity: 0.9;
+        box-shadow: rgba(203, 103, 115, 0.25) 0px 50px 100px -20px, rgba(238, 42, 42, 0.3) 0px 30px 60px -30px;
+    }
+}
+
+
