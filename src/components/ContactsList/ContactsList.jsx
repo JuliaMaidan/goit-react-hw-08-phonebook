@@ -1,14 +1,20 @@
 import styles from './ContactsList.module.scss';
 
 import { useSelector, useDispatch } from 'react-redux';
-import { getContacts, getFilteredContacts } from '../../redux/selectors';
+import {
+  // selectAllContacts,
+  selectLoading,
+  selectFilteredContacts,
+  // selectError,
+} from 'redux/contacts/selectors';
 import { useEffect } from 'react';
-import { fetchContacts, deleteContact } from '../../redux/operations';
+import { fetchContacts, deleteContact } from 'redux/contacts/operations';
 
 export const ContactsList = () => {
   const dispatch = useDispatch();
-  const { isLoading, error } = useSelector(getContacts);
-  const filtered = useSelector(getFilteredContacts);
+  const isLoading = useSelector(selectLoading);
+  const filtered = useSelector(selectFilteredContacts);
+  // const contacts = useSelector(selectAllContacts);
 
   useEffect(() => {
     dispatch(fetchContacts());
@@ -19,11 +25,11 @@ export const ContactsList = () => {
   return (
     <ul className={styles.list}>
       {isLoading && <b>Loading contacts...</b>}
-      {error && <b>{error}</b>}
+      {/* {error && <b>{error}</b>} */}
       {filtered.map(contact => (
         <li className={styles.item} key={contact.id}>
           <p>
-            {contact.name}: {contact.phone}
+            {contact.name}: {contact.number}
           </p>
           <button
             className={styles.btn}

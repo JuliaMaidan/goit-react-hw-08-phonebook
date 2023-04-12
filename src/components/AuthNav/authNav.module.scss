@@ -1,0 +1,12 @@
+.linkWrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.link {
+    font-size: 20px;
+}
+
+.active {
+    color: red;
+}
