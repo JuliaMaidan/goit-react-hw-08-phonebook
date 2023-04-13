@@ -28,9 +28,9 @@ export const App = () => {
   // function updateBackgroundPosition() {
   //   let bg = document.querySelector('body');
   //   bg.style.backgroundPositionX =
-  //     (mouseX - window.innerWidth / 2) * 0.05 + 'px';
+  //     (mouseX - window.innerWidth / 2) * 0.02 + 'px';
   //   bg.style.backgroundPositionY =
-  //     (mouseY - window.innerHeight / 2) * 0.05 + 'px';
+  //     (mouseY - window.innerHeight / 2) * 0.02 + 'px';
   //   requestAnimationFrame(updateBackgroundPosition);
   // }
 

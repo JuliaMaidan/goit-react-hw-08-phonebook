@@ -9,11 +9,12 @@ body {
     color: rgb(24, 5, 79);
 }
 
-// body {
-//     background-image: url('../image/strawberry.png'), url('../image/banana.png');
-//     background-size: 300px;
-//     background-repeat: no-repeat;
-// }
+body {
+    background-image: url('../image/strawberry.png'), url('../image/banana.png'), url('../image/leafs.png'), url('../image/background.png');
+    background-size: 280px, 600px, 980px, 500px;
+    background-repeat: no-repeat;
+    background-position: top 505px right 159px, top 40px right, top left 170px, top 160px right ;
+}
 
 a {
     background-image: linear-gradient(to right,
