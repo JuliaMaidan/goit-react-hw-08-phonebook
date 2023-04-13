@@ -17,6 +17,25 @@ export const App = () => {
   const dispatch = useDispatch();
   const { isRefreshing } = useAuth();
 
+  // let mouseX = 0;
+  // let mouseY = 0;
+
+  // document.addEventListener('mousemove', function (e) {
+  //   mouseX = e.clientX;
+  //   mouseY = e.clientY;
+  // });
+
+  // function updateBackgroundPosition() {
+  //   let bg = document.querySelector('body');
+  //   bg.style.backgroundPositionX =
+  //     (mouseX - window.innerWidth / 2) * 0.05 + 'px';
+  //   bg.style.backgroundPositionY =
+  //     (mouseY - window.innerHeight / 2) * 0.05 + 'px';
+  //   requestAnimationFrame(updateBackgroundPosition);
+  // }
+
+  // updateBackgroundPosition();
+
   useEffect(() => {
     dispatch(refreshUser());
   }, [dispatch]);
